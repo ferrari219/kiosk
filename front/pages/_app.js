@@ -1,7 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Head from 'next/head';
-import wrapper from 'store/configureStore';
+import React from "react";
+import PropTypes from "prop-types";
+import Head from "next/head";
+import Globals from "assets/styles/Globals";
+import wrapper from "store/configureStore";
 
 const app = ({ Component }) => {
   return (
@@ -16,6 +17,7 @@ const app = ({ Component }) => {
         <meta name="author" content="Graham" />
         <meta keyword="KioskSimulate" />
       </Head>
+      <Globals />
       <Component />
     </>
   );
