@@ -23,10 +23,7 @@ const Globals = () => {
         body {
           margin: 0;
           padding: 0;
-          * {
-            margin: inherit;
-            padding: inherit;
-          }
+          
           a {
             text-decoration: none;
             color: inherit;
