@@ -1,8 +1,8 @@
-import React from "react";
-import Wrap from "components/kfc/Wrap";
-import { css } from "@emotion/react";
-import theme from "assets/styles/theme";
-import ALink from "components/kfc/ALink";
+import React from 'react';
+import Wrap from 'components/kfc/Wrap';
+import { css } from '@emotion/react';
+import theme from 'assets/styles/theme';
+import ALink from 'components/kfc/ALink';
 
 const kfc = () => {
   return (
@@ -58,7 +58,7 @@ const sectionStyle = css`
     & > button {
       flex: 1;
       height: 4rem;
-      background-color: ${theme.color.main};
+      background-color: ${theme.color.pt};
       border: none;
       border-radius: 0.5rem;
       color: white;

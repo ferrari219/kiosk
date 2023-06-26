@@ -1,6 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import { css } from "@emotion/react";
+import React from 'react';
+import Link from 'next/link';
+import { css } from '@emotion/react';
+import theme from 'assets/styles/theme';
 
 const Gnb = () => {
   return (
@@ -28,7 +29,23 @@ const GnbStyle = css`
   ul {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
+    a {
+      font-size: ${theme.size.sm};
+      color: ${theme.color.pt};
+    }
+    li + li {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        top: 0.5rem;
+        width: 0.1rem;
+        height: 1.5rem;
+        background-color: ${theme.color.pt};
+      }
+    }
   }
 `;
 

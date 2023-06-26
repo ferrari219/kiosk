@@ -1,9 +1,10 @@
-import React from "react";
-import Gnb from "components/kfc/TopGnb";
-import Img from "next/image";
-import Logo from "assets/images/common/logo_kfc.png";
-import Wrap from "components/kfc/Wrap";
-import { css } from "@emotion/react";
+import React from 'react';
+import TopGnb from 'components/kfc/TopGnb';
+import Img from 'next/image';
+import Logo from 'assets/images/common/logo_kfc.png';
+import Wrap from 'components/kfc/Wrap';
+import { css } from '@emotion/react';
+import NavTab from 'components/kfc/NavTab';
 
 const order = () => {
   return (
@@ -15,33 +16,9 @@ const order = () => {
             <div>
               <Img src={Logo} alt="Logo" />
             </div>
-            <Gnb />
+            <TopGnb />
           </header>
-          <nav>
-            <h3>네비게이션</h3>
-            <ul>
-              <li>
-                <span>PROMOTION</span>
-                <button type="button">매장행사</button>
-              </li>
-              <li>
-                <span>NEW</span>
-                <button type="button">신메뉴</button>
-              </li>
-              <li>
-                <button type="button">치킨</button>
-              </li>
-              <li>
-                <button type="button">버거/세트/박스</button>
-              </li>
-              <li>
-                <button type="button">사이드</button>
-              </li>
-              <li>
-                <button type="button">음료</button>
-              </li>
-            </ul>
-          </nav>
+          <NavTab />
           <section>
             <h3>메뉴목록</h3>
             <div>
@@ -74,8 +51,16 @@ const order = () => {
     </Wrap>
   );
 };
+
 const orderStyle = css`
+  padding: 2rem;
   background-color: #fff;
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export default order;

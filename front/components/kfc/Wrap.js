@@ -1,16 +1,14 @@
-import React from "react";
-import { css } from "@emotion/react";
-import Img from "next/image";
-import LogoW from "assets/images/common/logo_kfc_w.png";
-import theme from "assets/styles/theme";
+import React from 'react';
+import { css } from '@emotion/react';
+import Img from 'next/image';
+import LogoW from 'assets/images/common/logo_kfc_w.png';
+import theme from 'assets/styles/theme';
 
 const Wrap = ({ children }) => {
   return (
     <div css={wrapLayoutStyle}>
       <section className="machine">
-        <h2>
-          <Img src={LogoW} alt="KFC" />
-        </h2>
+        <h2>{/* <Img src={LogoW} alt="KFC" /> */}</h2>
         <div className="content">{children}</div>
       </section>
     </div>
@@ -24,7 +22,7 @@ const wrapLayoutStyle = css`
   & > .machine {
     max-width: 90rem;
     height: 100%;
-    background-color: ${theme.color.main};
+    background-color: ${theme.color.pt};
     border-radius: 2rem;
     & > h2 {
       margin: 0;
