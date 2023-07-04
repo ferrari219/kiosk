@@ -36,6 +36,7 @@ const NavTabStyle = css`
     & > li {
       flex: 1;
       height: 8rem;
+      margin: 2rem 0;
       button {
         display: block;
         width: 100%;

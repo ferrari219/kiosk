@@ -20,8 +20,17 @@ const order = () => {
           </header>
           <NavTab />
           <section>
-            <h3>메뉴목록</h3>
+            <h3 className="sr-only">메뉴목록</h3>
             <div>
+              <div>
+                <div>닭껍질튀김버켓</div>
+                <div>
+                  <img src="/images/sample.png" alt="sample" />
+                </div>
+                <div>9900</div>
+                <div>닭껍질튀김+텐더5+살사소스</div>
+                <div>매장 상황에 따라 조기 소진될 수 있습니다.</div>
+              </div>
               <span>
                 {/*
                 name: "닭껍질튀김버켓",
